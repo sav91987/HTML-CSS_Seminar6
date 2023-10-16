@@ -23,22 +23,14 @@ img {
 
 .header {
     display: flex;
-    justify-content: center;
-    padding: 18px 230px 19px 230px;
+    justify-content: space-between;
+    padding: 18px 0;
     background: #222222;
     gap: 859px;
 }
 
 .headerBtn {
     display: flex;
-    justify-content: space-between;
-}
-
-.headerBtnLeftSide {
-    gap: 41px;
-}
-
-.headerBtnRightSide {
     gap: 41px;
 }
 
@@ -56,10 +48,14 @@ img {
     margin-bottom: 65px;
 }
 
+.mainLeftSide {
+    max-width: 800px;
+}
+
 .mainRightSide {
     display: flex;
     flex-direction: column;
-    justify-items: left;
+    justify-content: center;
     padding: 290px 0 381px 91px;
 }
 
@@ -93,7 +89,6 @@ h2 {
     gap: 30px;
     margin-bottom: 96px;
 }
-
 
 .cardFirst {
     width: 360px;
@@ -179,7 +174,6 @@ h4 {
     gap: 16px;
     max-width: 360px;
     background-color: #F8F8F8;
-    margin-bottom: 48px;
 }
 
 .saleCardName {
@@ -213,4 +207,86 @@ h4 {
     padding: 15px 39px;
     margin-bottom: 60px;
     cursor: pointer;
+    margin-top: 18px;
+}
+
+@media (min-width: 848px) and (max-width: 1139px) {
+
+    .container {
+        max-width: 736px;
+    }
+
+    .header {
+        padding: 18px 32px;
+        gap: 424px;
+    }
+
+    .main {
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+
+    .mainLeftSide {
+        max-width: 386px;
+        max-height: 368px;
+    }
+
+    .mainRightSide {
+        padding: 138px 33px 137px 39px;
+        max-height: 368px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .card {
+
+        gap: 19px;
+        margin-bottom: 110px;
+    }
+
+    .cardFirst {
+        width: 232px;
+        height: 168px;
+    }
+
+    .cardSecond {
+        width: 232px;
+        height: 168px;
+    }
+
+    .cardThird {
+        width: 232px;
+        height: 168px;
+    }
+
+    .cardFourth {
+        width: 735px;
+        height: 116px;
+    }
+
+    .salesTitle {
+        margin-bottom: 72px;
+    }
+
+    .salesCards {
+
+        gap: 16px;
+    }
+
+    .salesCard {
+        margin-bottom: 0;
+    }
+
+    .btnCentr {
+        margin-top: 32px;
+        margin-bottom: 70px;
+    }
 }
