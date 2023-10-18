@@ -22,11 +22,13 @@ img {
 }
 
 .header {
+    background: #222222;
+}
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 18px 0;
-    background: #222222;
-    gap: 859px;
 }
 
 .headerBtn {
@@ -40,9 +42,12 @@ img {
 }
 
 .main {
+    background: #F1E4E6;
+}
+
+.main_wrapper {
     display: flex;
     justify-content: start;
-    background: #F1E4E6;
     max-width: 1600px;
     margin: 0 auto;
     margin-bottom: 65px;
@@ -210,18 +215,15 @@ h4 {
     margin-top: 18px;
 }
 
+/* Планшет */
+
 @media (min-width: 848px) and (max-width: 1139px) {
 
     .container {
         max-width: 736px;
     }
 
-    .header {
-        padding: 18px 32px;
-        gap: 424px;
-    }
-
-    .main {
+    .main_wrapper {
         justify-content: space-between;
         max-width: 800px;
         margin: 0 auto;
@@ -277,7 +279,6 @@ h4 {
     }
 
     .salesCards {
-
         gap: 16px;
     }
 
@@ -288,5 +289,87 @@ h4 {
     .btnCentr {
         margin-top: 32px;
         margin-bottom: 70px;
+    }
+}
+
+
+/* Телефон */
+
+@media (max-width: 847px) {
+
+    .container {
+        max-width: 343px;
+    }
+
+    .header__wrapper {
+        padding: 18px 16px;
+    }
+
+    .buttonNone {
+        display: none;
+    }
+
+    .main_wrapper {
+        max-width: 375px;
+    }
+
+    .mainLeftSide {
+        display: none;
+    }
+
+    .mainRightSide {
+        padding: 148px 56px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .card {
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .cardFirst {
+        max-width: 343px;
+        max-height: 247px;
+    }
+
+    .cardSecond {
+        max-width: 343px;
+        max-height: 248px;
+    }
+
+    .cardThird {
+        max-width: 343px;
+        max-height: 248px;
+    }
+
+    .cardFourth {
+        max-width: 343px;
+        max-height: 111px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .salesTitle {
+        margin-bottom: 64px;
+    }
+
+    .salesCards {
+        gap: 16px;
+    }
+
+    .salesCard {
+        margin-bottom: 0;
+    }
+
+    .btnCentr {
+        margin-top: 24px;
+        margin-bottom: 85px;
     }
 }
