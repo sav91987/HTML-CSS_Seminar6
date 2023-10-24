@@ -238,12 +238,13 @@ h4 {
     font-weight: 400;
     font-family: "Lato", sans-serif;
     opacity: 0;
-    transition: .75s ease;
+    transition: .5s ease;
 }
 
 .salesCard__image:hover .salesCard__btnAddToCart {
     opacity: 1;
-    transition: 1s ease;
+    transition: .75s ease;
+    transform: translateY(-20px);
 }
 
 */ .saleCardName {
@@ -278,16 +279,19 @@ h4 {
     margin-bottom: 60px;
     cursor: pointer;
     margin-top: 18px;
+    transition: .3s ease;
 }
 
 .btnCentr:hover {
-    background-color: #F16D7F;
     color: #FFFFFF;
+    background-color: #F16D7F;
+    transform: scale(1.1);
+    transition: .3s ease;
 }
 
 .advantages {
-    background: #222224;
     color: #fbfbfb;
+    background: #222224;
     font-family: Lato;
 }
 
