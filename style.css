@@ -21,6 +21,8 @@ img {
     margin: 0 auto;
 }
 
+
+
 .header {
     background: #222222;
 }
@@ -70,7 +72,56 @@ img {
     max-width: 1600px;
     margin: 0 auto;
     margin-bottom: 65px;
+    position: relative;
 }
+
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0 32px 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFFFFF;
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.burgerMenu_categories {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-left: 21.5px;
+}
+
+.burgerMenu h2,
+a {
+    font-family: "Lato", sans-serifLa;
+    font-size: 14px;
+}
+
+.burgerMenu a {
+    color: #6F6E6E;
+}
+
+.burgerMenu__text-fw {
+    font-weight: 700;
+    color: #000;
+}
+
+.burgerMenu__text-red {
+    color: #F16D7F;
+    ;
+}
+
+.burgerMenu__text-a {
+    color: #6F6E6E;
+}
+
 
 .mainLeftSide {
     max-width: 800px;
@@ -82,6 +133,8 @@ img {
     justify-content: center;
     padding: 290px 0 381px 91px;
 }
+
+
 
 .text {
     color: #222;
@@ -371,7 +424,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     padding: 150px 0 156px 0;
-    width: 557px;
+    /* max-width: 557px; */
 }
 
 .subscribe__rightSide-text {
@@ -560,7 +613,6 @@ button {
 
     .subscribe__rightSide {
         padding: 0;
-        background-size: cover;
     }
 }
 
@@ -671,6 +723,7 @@ button {
 
     .subscribe__rightSide {
         padding: 0;
+        /* max-width: 340px; */
     }
 
     h2 {
