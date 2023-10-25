@@ -292,6 +292,7 @@ h4 {
     font-family: "Lato", sans-serif;
     opacity: 0;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 .salesCard__image:hover .salesCard__btnAddToCart {
