@@ -1,0 +1,23 @@
+@import 'vars.scss';
+
+@mixin flexJustify($position) {
+    display: flex;
+    justify-content: $position;
+}
+
+@mixin flexItems {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
