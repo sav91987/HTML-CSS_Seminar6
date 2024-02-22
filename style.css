@@ -59,8 +59,128 @@ img {
   right: -8px;
 }
 
+.top-head {
+  background: #F8F3F4;
+}
+.top-head__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+.top-head__heading {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #636363;
+}
+
+.breadcrumbs__link_site {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.swiper {
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  padding: 10px 0px 40px 0px;
+  max-height: 724px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producDiscription {
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 400;
+  padding-bottom: 64px;
+  margin-bottom: 128px;
+}
+.producDiscription__type {
+  padding: 65px 0 12px;
+  width: 1140px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+.producDiscription__name {
+  padding: 12px 0 48px;
+  width: 1140px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+}
+.producDiscription__discription {
+  width: 570px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5e5e;
+}
+.producDiscription__price {
+  width: 1140px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  padding-bottom: 64px;
+}
+.producDiscription__parameters {
+  display: flex;
+  justify-content: center;
+  width: 1140px;
+  padding: 64px 0 48px;
+  gap: 15px;
+}
+.producDiscription__parameters_select {
+  color: #6F6E6E;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.producDiscription__btnAddToCart {
+  display: flex;
+  align-items: center;
+  color: #F16D7F;
+  gap: 22px;
+  justify-content: center;
+  background: none;
+  border: 1px solid #F16D7F;
+  padding: 12px 57px 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+}
+
 .main {
-  background: #f1e4e6;
+  background: #F8F3F4;
 }
 .main__wrapper {
   display: flex;
@@ -79,7 +199,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 200px;
 }
 .burgerMenu__categories {
@@ -100,7 +220,7 @@ a {
 }
 
 .burgerMenu a {
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .burgerMenu__text-fw {
@@ -113,7 +233,7 @@ a {
 }
 
 .burgerMenu__text-a {
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .mainLeftSide {
@@ -249,16 +369,16 @@ h4 {
   height: 100%;
 }
 .salesCard__btnAddToCart {
-  position: absolute;
   display: flex;
+  align-items: center;
+  position: absolute;
   gap: 11px;
   justify-content: center;
-  align-items: center;
   top: 188px;
   left: 110px;
   right: 110px;
   background: none;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 11px 8px 13px;
   font-size: 14px;
   font-weight: 400;
@@ -322,9 +442,13 @@ h4 {
   transition: 0.3s ease;
 }
 
+.padd {
+  padding-top: 128px;
+}
+
 .btnCentr:hover {
-  color: #FFFFFF;
-  background-color: #F16D7F;
+  color: #ffffff;
+  background-color: #f16d7f;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
@@ -463,10 +587,10 @@ button {
 }
 .footer__icons-btn {
   display: flex;
+  justify-content: center;
   background-color: #fff;
   width: 32px;
   height: 32px;
-  justify-content: center;
   align-items: center;
   border: none;
   cursor: pointer;
@@ -475,7 +599,7 @@ button {
   background-color: #F16D7F;
 }
 .footer__icons-btn:hover svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /* Планшет */

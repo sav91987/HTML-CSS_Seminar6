@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Учебный сайт" />
-    <title>Seminar6</title>
+    <title>Product</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <h1 style="display: none;">Учебный сайт</h1>
+    <h1 style="display: none">Учебный сайт</h1>
     <header class="header">
       <div class="header__wrapper container">
         <div class="headerBtn">
@@ -34,122 +37,82 @@
       </div>
     </header>
 
-    <section class="main">
-      <div class="main__wrapper">
-        <div class="burgerMenu menu-active hidden">
-          <h2 class="burgerMenu__text-fw">MENU</h2>
-          <h2 class="burgerMenu__text-red">MAN</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Bags</a>
-            <a href="#">Denim</a>
-            <a href="#">T-Shirts</a>
-          </div>
-
-          <h2 class="burgerMenu__text-red">WOMAN</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Jackets &amp; Coats</a>
-            <a href="#">Polos</a>
-            <a href="#">T-Shirts</a>
-            <a href="#">Shirts</a>
-          </div>
-
-          <h2 class="burgerMenu__text-red">KIDS</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Jackets &amp; Coats</a>
-            <a href="#">Polos</a>
-            <a href="#">T-Shirts</a>
-            <a href="#">Shirts</a>
-            <a href="#">Bags</a>
-          </div>
-        </div>
-        <img
-          class="mainLeftSide"
-          src="./img/mainPicture.svg"
-          alt="mainPicture"
-        />
-        <div class="mainRightSide">
-          <h1 class="text textFormat textMainTitle">THE BRAND</h1>
-          <h2 class="text textFormat textMain">
-            OF LUXERIOUS <span class="redColor">FASHION</span>
-          </h2>
-        </div>
+    <section class="top-head">
+      <div class="top-head__wrapper container">
+        <h2 class="top-head__heading">NEW ARRIVALS</h2>
+        <nav class="breadcrumb">
+          <a href="" class="breadcrumbs__link">HOME /</a>
+          <a href="" class="breadcrumbs__link">MEN /</a>
+          <a href="" class="breadcrumbs__link breadcrumbs__link_site"
+            >NEW ARRIVALS</a
+          >
+        </nav>
       </div>
     </section>
 
-    <section class="card container">
-      <div class="cardFirst">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>30% OFF</h3>
-            <h4>FOR WOMEN</h4>
+    
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide__main">
+            <img src="./img/productPicture.svg" alt="productPicture1" />
           </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <div class="cardSecond">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>HOT DEAL</h3>
-            <h4>FOR MEN</h4>
-          </div>
+  
+      <section class="producDiscription container">
+        <h2 class="producDiscription__type">WOMEN COLLECTION</h2>
+        <img src="./img/Devider.png" alt="Devider" />
+        <h2 class="producDiscription__name">MOSCHINO CHEAP AND CHIC</h2>
+        <p class="producDiscription__discription">
+          Compellingly actualize fully researched processes before proactive
+          outsourcing. Progressively syndicate collaborative architectures before
+          cutting-edge services. Completely visualize parallel core competencies
+          rather than exceptional portals.
+        </p>
+        <h2 class="producDiscription__price">$561</h2>
+        <img class="producDiscription__img" src="./img/Line.png" alt="Line" />
+        <div class="producDiscription__parameters">
+          <select class="producDiscription__parameters_select">
+            <option>CHOOSE COLOR</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>White</option>
+          </select>
+          <select class="producDiscription__parameters_select">
+            <option>CHOOSE SIZE</option>
+            <option>40</option>
+            <option>42</option>
+            <option>44</option>
+            <option>46</option>
+          </select>
+          <select class="producDiscription__parameters_select">
+            <option>QUANTITY</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
         </div>
-      </div>
-      <div class="cardThird">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>NEW ARRIVALS</h3>
-            <h4>FOR KIDS</h4>
-          </div>
-        </div>
-      </div>
-      <div class="cardFourth">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>LUXIROUS &amp; TRENDY</h3>
-            <h4>ACCESORIES</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="salesTitle container">
-      <h5 class="text textSalesTitle">Fetured Items</h5>
-      <p class="text textSales">
-        Shop for items based on what we featured in this week
-      </p>
-    </section>
+        <button class="producDiscription__btnAddToCart">
+          <img src="./img/btnBasketRed.svg" alt="btnBasket" />
+          Add to Cart
+        </button>
+      </section>
+    
 
     <section class="salesCards container">
-      <h1 style="display: none;">Sales Cards</h1>
+      <h1 style="display: none">Sales Cards</h1>
       <div class="salesCard">
         <div class="salesCard__image">
-          <img src="./img/SalePicture1.jpg" alt="SalePicture1" />
+          <img src="./img/SalePicture4.png" alt="SalePicture4" />
 
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-              <img src="./img/btnBasket.svg" alt="btnBasket" />
-            </a>
-            Add to Cart
-          </button>
-        </div>
-        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
-        <p class="saleCardDiscript text">
-          Known for her sculptural takes on traditional tailoring, Australian
-          arbiter of cool Kym Ellery teams up with Moda Operandi.
-        </p>
-        <p class="saleCardPrice text">$52.00</p>
-      </div>
-      <div class="salesCard">
-        <div class="salesCard__image">
-          <img src="./img/SalePicture12.png" alt="SalePicture2" />
-          <div class="overlay"></div>
-          <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
             <img src="./img/btnBasket.svg" alt="btnBasket" />
-          </a>
             Add to Cart
           </button>
         </div>
@@ -165,45 +128,7 @@
           <img src="./img/SalePicture3.png" alt="SalePicture3" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-              <img src="./img/btnBasket.svg" alt="btnBasket" />
-            </a>
-            Add to Cart
-          </button>
-        </div>
-        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
-        <p class="saleCardDiscript text">
-          Known for her sculptural takes on traditional tailoring, Australian
-          arbiter of cool Kym Ellery teams up with Moda Operandi.
-        </p>
-        <p class="saleCardPrice text">$52.00</p>
-      </div>
-      <div class="salesCard">
-        <div class="salesCard__image">
-          <img src="./img/SalePicture4.png" alt="SalePicture4" />
-          <div class="overlay"></div>
-          <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-              <img src="./img/btnBasket.svg" alt="btnBasket" />
-            </a>
-            Add to Cart
-          </button>
-        </div>
-        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
-        <p class="saleCardDiscript text">
-          Known for her sculptural takes on traditional tailoring, Australian
-          arbiter of cool Kym Ellery teams up with Moda Operandi.
-        </p>
-        <p class="saleCardPrice text">$52.00</p>
-      </div>
-      <div class="salesCard">
-        <div class="salesCard__image">
-          <img src="./img/SalePicture5.png" alt="SalePicture5" />
-          <div class="overlay"></div>
-          <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-              <img src="./img/btnBasket.svg" alt="btnBasket" />
-            </a>
+            <img src="./img/btnBasket.svg" alt="btnBasket" />
             Add to Cart
           </button>
         </div>
@@ -219,9 +144,7 @@
           <img src="./img/SalePicture6.png" alt="SalePicture6" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-              <img src="./img/btnBasket.svg" alt="btnBasket" />
-            </a>
+            <img src="./img/btnBasket.svg" alt="btnBasket" />
             Add to Cart
           </button>
         </div>
@@ -232,46 +155,8 @@
         </p>
         <p class="saleCardPrice text">$52.00</p>
       </div>
-      <button class="container btnCentr text">
-        Browse All Product
-      </button>
     </section>
-
-    <section class="advantages">
-      <div class="advantages__wrapper container">
-        <div class="advantages__card">
-          <img src="./img/iconDelivery.svg" alt="iconDelivery" />
-          <h2 class="advantages__title">Free Delivery</h2>
-          <p class="advantages__text">
-            Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.
-          </p>
-        </div>
-        <div class="advantages__card">
-          <img
-            src="./img/iconSales&amp;Disconts.svg"
-            alt="Sales&amp;Disconts"
-          />
-          <h2 class="advantages__title advantages__title-pad">
-            Sales &amp; discounts
-          </h2>
-          <p class="advantages__text">
-            Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.
-          </p>
-        </div>
-        <div class="advantages__card">
-          <img src="./img/iconQuality.svg" alt="iconQuality" />
-          <h2 class="advantages__title advantages__title-pad2">
-            Quality assurance
-          </h2>
-          <p class="advantages__text">
-            Worldwide delivery on all. Authorit tively morph next-generation
-            innov tion with extensive models.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="padd"></div>
     <section class="subscribe">
       <div class="subscribe__shadow">
         <div class="subscribe__wrapper container">
@@ -391,6 +276,14 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
