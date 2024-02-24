@@ -93,33 +93,32 @@ img {
   color: $colorSiteSelected;
 }
 
-
 .swiper {
   background: #f7f7f7;
   border: 1px solid #eaeaea;
+  margin-bottom: -75px;
+  
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 .swiper-slide__main {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 .swiper-slide img {
   padding: 10px 0px 40px 0px;
-  max-height: 724px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .producDiscription {
   border: 1px solid #eaeaea;
+  background: white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -129,6 +128,8 @@ img {
   font-weight: 400;
   padding-bottom: 64px;
   margin-bottom: 128px;
+  
+
 
   &__type {
     padding: 65px 0 12px;
@@ -836,3 +837,6 @@ button {
     padding: 43px 0 9px 0;
   }
 }
+
+
+
