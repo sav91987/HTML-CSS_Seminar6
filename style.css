@@ -103,7 +103,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 
 .swiper-slide img {
@@ -111,6 +110,8 @@ img {
 }
 
 .producDiscription {
+  position: relative;
+  z-index: 5;
   border: 1px solid #eaeaea;
   background: white;
   display: flex;
