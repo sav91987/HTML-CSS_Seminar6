@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Учебный сайт" />
-    <title>Seminar6</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <h1 style="display: none;">Учебный сайт</h1>
+    <h1 style="display: none">Учебный сайт</h1>
     <header class="header">
       <div class="header__wrapper container">
         <div class="headerBtn">
@@ -34,102 +32,111 @@
       </div>
     </header>
 
-    <section class="main">
-      <div class="main__wrapper">
-        <div class="burgerMenu menu-active hidden">
-          <h2 class="burgerMenu__text-fw">MENU</h2>
-          <h2 class="burgerMenu__text-red">MAN</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Bags</a>
-            <a href="#">Denim</a>
-            <a href="#">T-Shirts</a>
-          </div>
-
-          <h2 class="burgerMenu__text-red">WOMAN</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Jackets &amp; Coats</a>
-            <a href="#">Polos</a>
-            <a href="#">T-Shirts</a>
-            <a href="#">Shirts</a>
-          </div>
-
-          <h2 class="burgerMenu__text-red">KIDS</h2>
-          <div class="burgerMenu__categories burgerMenu__text-a">
-            <a href="#">Accessories</a>
-            <a href="#">Jackets &amp; Coats</a>
-            <a href="#">Polos</a>
-            <a href="#">T-Shirts</a>
-            <a href="#">Shirts</a>
-            <a href="#">Bags</a>
-          </div>
-        </div>
-        <img
-          class="mainLeftSide"
-          src="./img/mainPicture.svg"
-          alt="mainPicture"
-        />
-        <div class="mainRightSide">
-          <h1 class="text textFormat textMainTitle">THE BRAND</h1>
-          <h2 class="text textFormat textMain">
-            OF LUXERIOUS <span class="redColor">FASHION</span>
-          </h2>
-        </div>
+    <section class="top-head">
+      <div class="top-head__wrapper container">
+        <h2 class="top-head__heading">NEW ARRIVALS</h2>
+        <nav class="breadcrumb">
+          <a href="" class="breadcrumbs__link">HOME /</a>
+          <a href="" class="breadcrumbs__link">MEN /</a>
+          <a href="" class="breadcrumbs__link breadcrumbs__link_site"
+            >NEW ARRIVALS</a
+          >
+        </nav>
       </div>
     </section>
 
-    <section class="card container">
-      <div class="cardFirst">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>30% OFF</h3>
-            <h4>FOR WOMEN</h4>
-          </div>
+    <section class="filter-sort container">
+      <details class="filter">
+        <summary class="filter__summary">
+          <span class="filter__header">FILTER</span
+          ><svg
+            width="15"
+            height="10"
+            viewBox="0 0 15 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+              fill="black"
+            />
+          </svg>
+        </summary>
+        <div class="filter__box">
+          <details class="filter__item">
+            <summary class="filter__item-summary">CATEGORY</summary>
+            <div class="filter__link-box">
+              <a class="filter__link" href="#">Accessories</a>
+              <a class="filter__link" href="#">Bags</a>
+              <a class="filter__link" href="#">Denim</a>
+              <a class="filter__link" href="#">Hoodies & Sweatshirts</a>
+              <a class="filter__link" href="#">Jackets & Coats</a>
+              <a class="filter__link" href="#">Polos</a>
+              <a class="filter__link" href="#">Shirts</a>
+              <a class="filter__link" href="#">Shoes</a>
+              <a class="filter__link" href="#">Sweaters & Knits</a>
+              <a class="filter__link" href="#">T-Shirts</a>
+              <a class="filter__link" href="#">Tanks</a>
+            </div>
+          </details>
+          <details class="filter__item">
+            <summary class="filter__item-summary">BRAND</summary>
+            <div class="filter__link-box">
+              <a class="filter__link" href="#">Adidas</a>
+              <a class="filter__link" href="#">Nike</a>
+              <a class="filter__link" href="#">Lacost</a>
+              <a class="filter__link" href="#">H&M</a>
+            </div>
+          </details>
+          <details class="filter__item">
+            <summary class="filter__item-summary">DESIGNER</summary>
+            <div class="filter__link-box">
+              <a class="filter__link" href="#">Some Disiner 1</a>
+              <a class="filter__link" href="#">Some Disiner 2</a>
+              <a class="filter__link" href="#">Some Disiner 3</a>
+            </div>
+          </details>
         </div>
-      </div>
-      <div class="cardSecond">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>HOT DEAL</h3>
-            <h4>FOR MEN</h4>
-          </div>
-        </div>
-      </div>
-      <div class="cardThird">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>NEW ARRIVALS</h3>
-            <h4>FOR KIDS</h4>
-          </div>
-        </div>
-      </div>
-      <div class="cardFourth">
-        <div class="shadow">
-          <div class="text textCardFormat">
-            <h3>LUXIROUS &amp; TRENDY</h3>
-            <h4>ACCESORIES</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+      </details>
 
-    <section class="salesTitle container">
-      <h5 class="text textSalesTitle">Fetured Items</h5>
-      <p class="text textSales">
-        Shop for items based on what we featured in this week
-      </p>
+      <div class="sort">
+        <details>
+            <summary class="sort__summary"><span class="sort__header">TRENDING NOW</span><svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                </svg>
+                </summary>
+        </details>
+        <details>
+            <summary class="sort__summary"><span class="sort__header">SIZE</span><svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                </svg>
+                </summary>
+                <div class="sort__checkbox-box">
+                    <label class="sort__label"><input type="checkbox">XS</label>
+                    <label class="sort__label"><input type="checkbox">S</label>
+                    <label class="sort__label"><input type="checkbox">M</label>
+                    <label class="sort__label"><input type="checkbox">L</label>
+                </div>
+        </details>
+        <details>
+            <summary class="sort__summary"><span class="sort__header">PRICE</span><svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
+                </svg>
+                </summary>
+        </details>
+        
+      </div>
     </section>
 
     <section class="salesCards container">
-      <h1 style="display: none;">Sales Cards</h1>
+      <h1 style="display: none">Sales Cards</h1>
       <div class="salesCard">
         <div class="salesCard__image">
           <img src="./img/SalePicture1.jpg" alt="SalePicture1" />
 
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
+            <a href="./index2.html">
               <img src="./img/btnBasket.svg" alt="btnBasket" />
             </a>
             Add to Cart
@@ -147,9 +154,9 @@
           <img src="./img/SalePicture12.png" alt="SalePicture2" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
-            <img src="./img/btnBasket.svg" alt="btnBasket" />
-          </a>
+            <a href="./index2.html">
+              <img src="./img/btnBasket.svg" alt="btnBasket" />
+            </a>
             Add to Cart
           </button>
         </div>
@@ -165,7 +172,7 @@
           <img src="./img/SalePicture3.png" alt="SalePicture3" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
+            <a href="./index2.html">
               <img src="./img/btnBasket.svg" alt="btnBasket" />
             </a>
             Add to Cart
@@ -183,7 +190,7 @@
           <img src="./img/SalePicture4.png" alt="SalePicture4" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
+            <a href="./index2.html">
               <img src="./img/btnBasket.svg" alt="btnBasket" />
             </a>
             Add to Cart
@@ -201,7 +208,7 @@
           <img src="./img/SalePicture5.png" alt="SalePicture5" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
+            <a href="./index2.html">
               <img src="./img/btnBasket.svg" alt="btnBasket" />
             </a>
             Add to Cart
@@ -219,7 +226,7 @@
           <img src="./img/SalePicture6.png" alt="SalePicture6" />
           <div class="overlay"></div>
           <button class="salesCard__btnAddToCart">
-            <a  href="./index2.html">
+            <a href="./index2.html">
               <img src="./img/btnBasket.svg" alt="btnBasket" />
             </a>
             Add to Cart
@@ -232,9 +239,63 @@
         </p>
         <p class="saleCardPrice text">$52.00</p>
       </div>
-      <button class="container btnCentr text">
-        Browse All Product
-      </button>
+      <div class="salesCard">
+        <div class="salesCard__image">
+          <img src="./img/SalePicture1.jpg" alt="SalePicture1" />
+
+          <div class="overlay"></div>
+          <button class="salesCard__btnAddToCart">
+            <a href="./index2.html">
+              <img src="./img/btnBasket.svg" alt="btnBasket" />
+            </a>
+            Add to Cart
+          </button>
+        </div>
+        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
+        <p class="saleCardDiscript text">
+          Known for her sculptural takes on traditional tailoring, Australian
+          arbiter of cool Kym Ellery teams up with Moda Operandi.
+        </p>
+        <p class="saleCardPrice text">$52.00</p>
+      </div>
+      <div class="salesCard">
+        <div class="salesCard__image">
+          <img src="./img/SalePicture1.jpg" alt="SalePicture1" />
+
+          <div class="overlay"></div>
+          <button class="salesCard__btnAddToCart">
+            <a href="./index2.html">
+              <img src="./img/btnBasket.svg" alt="btnBasket" />
+            </a>
+            Add to Cart
+          </button>
+        </div>
+        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
+        <p class="saleCardDiscript text">
+          Known for her sculptural takes on traditional tailoring, Australian
+          arbiter of cool Kym Ellery teams up with Moda Operandi.
+        </p>
+        <p class="saleCardPrice text">$52.00</p>
+      </div>
+      <div class="salesCard">
+        <div class="salesCard__image">
+          <img src="./img/SalePicture1.jpg" alt="SalePicture1" />
+
+          <div class="overlay"></div>
+          <button class="salesCard__btnAddToCart">
+            <a href="./index2.html">
+              <img src="./img/btnBasket.svg" alt="btnBasket" />
+            </a>
+            Add to Cart
+          </button>
+        </div>
+        <p class="saleCardName text">ELLERY X M'O CAPSULE</p>
+        <p class="saleCardDiscript text">
+          Known for her sculptural takes on traditional tailoring, Australian
+          arbiter of cool Kym Ellery teams up with Moda Operandi.
+        </p>
+        <p class="saleCardPrice text">$52.00</p>
+      </div>
     </section>
 
     <section class="advantages">
@@ -393,7 +454,5 @@
         </div>
       </div>
     </footer>
-    
-    <script src="./script.js"></script>
   </body>
 </html>
