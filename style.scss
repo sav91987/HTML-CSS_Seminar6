@@ -120,8 +120,7 @@ img {
 
 .producDiscription {
   border: 1px solid #eaeaea;
-  display: flex;
-  flex-wrap: wrap;
+  @include flexWrap;
   align-items: center;
   justify-content: center;
   text-align: center;
