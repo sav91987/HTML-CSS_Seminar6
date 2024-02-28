@@ -11,6 +11,10 @@ body {
   background: #fff;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 summary {
   display: block;
 }
@@ -40,7 +44,22 @@ img {
 
 .headerBtn {
   display: flex;
+  align-items: center;
   gap: 41px;
+}
+
+.input_class {
+  position: absolute;
+  right: 999999px;
+  visibility: hidden;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox input:checked ~ .burgerMenu {
+  right: -99000px;
 }
 
 .button {
@@ -317,10 +336,13 @@ img {
   gap: 24px;
   padding: 32px 0 32px 32px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 51px;
+  right: -232px;
   background: #ffffff;
   width: 200px;
+  z-index: 10;
+  transition: right 0.3s;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
 }
 .burgerMenu__categories {
   display: flex;
