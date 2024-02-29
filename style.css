@@ -125,6 +125,7 @@ img {
 .selectedProduct-adress {
   display: flex;
   margin-top: 96px;
+  margin-bottom: 128px;
   gap: 128px;
 }
 
@@ -170,6 +171,11 @@ img {
   border: none;
   background: none;
 }
+.selectedProduct__param-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 .selectedProduct__param-box h2 {
   font-family: "Lato";
   font-weight: 400;
@@ -195,6 +201,134 @@ img {
   height: 25px;
   border: 1px solid #eaeaea;
 }
+.selectedProduct__btn {
+  display: flex;
+  justify-content: space-between;
+}
+.selectedProduct__btn-format {
+  border: 1px solid #a4a4a4;
+  padding: 16px 40px;
+  background-color: #fff;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+.selectedProduct__btn-format:hover {
+  color: #ffffff;
+  background-color: #F16D7F;
+  transition: 0.3s;
+}
+
+.adress {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+.adress__box {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.adress__box h2 {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+}
+.adress__input {
+  border: 1px solid #a4a4a4;
+  padding: 13px 0 16px 16px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.adress__input::-moz-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.adress__input::placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.adress__btn {
+  width: 30%;
+  border: 1px solid #a4a4a4;
+  padding: 10px 14px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 11px;
+  color: #4a4a4a;
+  background-color: #fff;
+  cursor: pointer;
+}
+.adress__btn:hover {
+  color: #fff;
+  background-color: #F16D7F;
+}
+.adress__price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #f5f3f3;
+  padding: 42px;
+}
+.adress__subPrice-box {
+  display: flex;
+  gap: 20px;
+}
+.adress__subPrice-box-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+.adress__totalPrice-box {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  margin-bottom: 21px;
+}
+.adress__totalPrice-box-text {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.adress__totalPrice-box-price {
+  font-family: "Lato";
+  color: #F16D7F;
+  font-weight: 700;
+}
+.adress__price-box-btn {
+  padding-top: 17px;
+  border-top: 1px solid #e2e2e2;
+}
+.adress__price-box-btn-format {
+  width: 100%;
+  border: 1px solid #a4a4a4;
+  padding: 16px 42px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #4a4a4a;
+  background-color: #fff;
+  cursor: pointer;
+}
+.adress__price-box-btn-format:hover {
+  color: #fff;
+  background-color: #F16D7F;
+  border: none;
+}
+
 .swiper {
   background: #f7f7f7;
   border: 1px solid #eaeaea;
