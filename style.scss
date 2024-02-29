@@ -14,8 +14,9 @@ body {
   background: #fff;
 }
 
-body, html {
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 summary {
@@ -52,9 +53,9 @@ img {
 }
 
 .input_class {
-    position: absolute;
-    right: 999999px;
-    visibility: hidden;
+  position: absolute;
+  right: 999999px;
+  visibility: hidden;
 }
 
 .checkbox {
@@ -62,7 +63,7 @@ img {
 }
 
 .checkbox input:checked ~ .burgerMenu {
-    right: -99000px;
+  right: -232px;
 }
 
 .button {
@@ -107,16 +108,114 @@ img {
   }
 }
 
-.breadcrumbs__link {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  color: #636363;
+.breadcrumbs {
+  display: flex;
+
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #636363;
+  }
+
+  &__link:not(:last-child)::after {
+    content: "/";
+    padding: 0 8px;
+  }
+  &__link_site {
+    font-weight: 700;
+    color: $colorSiteSelected;
+  }
 }
 
-.breadcrumbs__link_site {
-  font-weight: 700;
-  color: $colorSiteSelected;
+.selectedProduct-adress {
+  display: flex;
+  margin-top: 96px;
+  gap: 128px;
+}
+
+.selectedProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__box {
+    display: flex;
+    width: 652px;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  &__box-img {
+    width: 262px;
+  }
+
+  &__parametrs {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 22px 22px 0 31px;
+  }
+
+  &__box-top {
+    display: flex;
+    gap: 110px;
+  }
+
+  &__box-top-header {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 24px;
+    color: #222;
+  }
+
+  &__box-top-btn {
+    margin-top: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    border: none;
+    background: none;
+  }
+
+  &__param-box h2 {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+  }
+
+  &__param-box-price {
+    color: $colorSiteSelected;
+  }
+
+  &__selectedProduct__param-box-text {
+    color: #6f6e6e;
+  }
+
+  &__param-box-quantity {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__param-box-quantity-input {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 18px;
+    color: #656565;
+    width: 44px;
+    height: 25px;
+    border: 1px solid #eaeaea;
+  }
+
+  &__selectedProduct__btn {
+  }
 }
 
 .swiper {
@@ -360,7 +459,7 @@ img {
   padding: 32px 0 32px 32px;
   position: absolute;
   top: 51px;
-  right: -232px;
+  right: -999999px;
   background: #ffffff;
   width: 200px;
   z-index: 10;
@@ -627,14 +726,12 @@ h4 {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
-    color: #C4C4C4
+    color: #c4c4c4;
   }
 
   &__numbers-first {
-    color: $colorSiteSelected
+    color: $colorSiteSelected;
   }
-
-
 }
 
 .advantages {

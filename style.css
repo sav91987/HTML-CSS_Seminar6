@@ -11,7 +11,8 @@ body {
   background: #fff;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -59,7 +60,7 @@ img {
 }
 
 .checkbox input:checked ~ .burgerMenu {
-  right: -99000px;
+  right: -232px;
 }
 
 .button {
@@ -103,18 +104,97 @@ img {
   color: #F16D7F;
 }
 
+.breadcrumbs {
+  display: flex;
+}
 .breadcrumbs__link {
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
   color: #636363;
 }
-
+.breadcrumbs__link:not(:last-child)::after {
+  content: "/";
+  padding: 0 8px;
+}
 .breadcrumbs__link_site {
   font-weight: 700;
   color: #F16D7F;
 }
 
+.selectedProduct-adress {
+  display: flex;
+  margin-top: 96px;
+  gap: 128px;
+}
+
+.selectedProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.selectedProduct__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.selectedProduct__box {
+  display: flex;
+  width: 652px;
+  box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+}
+.selectedProduct__box-img {
+  width: 262px;
+}
+.selectedProduct__parametrs {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 22px 22px 0 31px;
+}
+.selectedProduct__box-top {
+  display: flex;
+  gap: 110px;
+}
+.selectedProduct__box-top-header {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 24px;
+  color: #222;
+}
+.selectedProduct__box-top-btn {
+  margin-top: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+  border: none;
+  background: none;
+}
+.selectedProduct__param-box h2 {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 22px;
+  color: #575757;
+}
+.selectedProduct__param-box-price {
+  color: #F16D7F;
+}
+.selectedProduct__selectedProduct__param-box-text {
+  color: #6f6e6e;
+}
+.selectedProduct__param-box-quantity {
+  display: flex;
+  gap: 24px;
+}
+.selectedProduct__param-box-quantity-input {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  color: #656565;
+  width: 44px;
+  height: 25px;
+  border: 1px solid #eaeaea;
+}
 .swiper {
   background: #f7f7f7;
   border: 1px solid #eaeaea;
@@ -337,7 +417,7 @@ img {
   padding: 32px 0 32px 32px;
   position: absolute;
   top: 51px;
-  right: -232px;
+  right: -999999px;
   background: #ffffff;
   width: 200px;
   z-index: 10;
@@ -609,7 +689,7 @@ h4 {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .pagination__numbers-first {
   color: #F16D7F;
