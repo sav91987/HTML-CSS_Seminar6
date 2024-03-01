@@ -232,6 +232,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 275px;
 }
 .adress__box h2 {
   font-family: "Lato";

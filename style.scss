@@ -254,6 +254,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 275px;
   }
 
   &__box h2 {
@@ -269,14 +270,14 @@ img {
     font-family: "Lato";
     font-weight: 400;
     font-size: 13px;
-    color: #b1b1b1; 
+    color: #b1b1b1;
   }
 
   &__input::placeholder {
     font-family: "Lato";
     font-weight: 400;
     font-size: 13px;
-    color: #b1b1b1; 
+    color: #b1b1b1;
   }
 
   &__btn {
