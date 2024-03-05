@@ -117,9 +117,128 @@ img {
   content: "/";
   padding: 0 8px;
 }
-.breadcrumbs__link_site {
+.breadcrumbs__link:last-child {
   font-weight: 700;
   color: #F16D7F;
+}
+
+.regForm-loyality {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+  font-family: "Lato", "sans-serif";
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 360px;
+}
+.regForm__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.regForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  max-height: 110px;
+}
+.regForm__input {
+  padding: 13px 0 16px 18px;
+  border: 1px solid #a4a4a4;
+}
+.regForm__input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.regForm__input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.regForm__heading {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.regForm__sex {
+  display: flex;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000;
+}
+.regForm__sex_item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.regForm__form_passDisciption {
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.regForm__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 170px;
+  border: 1px solid #a4a4a4;
+  padding: 16px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  height: 50px;
+}
+.regForm__btn:hover {
+  background-color: #F16D7F;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.regForm__btn:hover path {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.loyality {
+  width: 652px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.loyality__heading {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.loyality__discription {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.loyality__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.loyality__advantages_item {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.loyality__advantages_item h2 {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
 }
 
 .selectedProduct-adress {

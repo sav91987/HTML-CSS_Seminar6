@@ -122,9 +122,142 @@ img {
     content: "/";
     padding: 0 8px;
   }
-  &__link_site {
+
+  &__link:last-child {
     font-weight: 700;
     color: $colorSiteSelected;
+  }
+}
+
+.regForm-loyality {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+  font-family: "Lato", "sans-serif";
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 360px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__form {
+    
+    display: flex;
+    flex-direction: column;    
+    gap: 20px;
+    box-sizing: border-box;
+    max-height: 110px;
+    
+  }
+
+  &__input {
+    padding: 13px 0 16px 18px;
+    border: 1px solid #a4a4a4;
+  }
+
+  &__input::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    color: #b1b1b1;
+  }
+
+  &__heading {
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+  }
+
+  &__sex {
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #000;
+
+    &_item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+
+  &__form_passDisciption {
+    font-weight: 300;
+    font-size: 13px;
+    color: #b1b1b1;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 170px;
+    border: 1px solid #a4a4a4;
+    padding: 16px 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  &__btn:hover {
+    background-color: $colorSiteSelected;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+  }
+
+  &__btn:hover path {
+    fill: #fff;
+    transition: 0.3s;
+  }
+}
+
+.loyality {
+  width: 652px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  &__heading {
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__discription {
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &_item {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    &_item h2 {
+      font-weight: 300;
+      font-size: 24px;
+      color: #000;
+    }
   }
 }
 
