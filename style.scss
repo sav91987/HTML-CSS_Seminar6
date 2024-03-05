@@ -150,13 +150,11 @@ img {
   }
 
   &__form {
-    
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     gap: 20px;
     box-sizing: border-box;
     max-height: 110px;
-    
   }
 
   &__input {
