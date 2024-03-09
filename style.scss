@@ -303,6 +303,7 @@ img {
   }
 
   &__box-top-header {
+    line-height: 28px;
     font-family: "Lato";
     font-weight: 400;
     font-size: 24px;
@@ -328,6 +329,7 @@ img {
     font-family: "Lato";
     font-weight: 400;
     font-size: 22px;
+    line-height: 26px;
     color: #575757;
   }
 
@@ -574,6 +576,7 @@ img {
   &__parameters_select {
     color: #6f6e6e;
     font-size: 14px;
+    line-height: 16px;
     border: none;
     cursor: pointer;
   }
@@ -598,12 +601,16 @@ img {
 }
 
 .filter {
-  width: 360px;
+  width: 40px;
   padding: 13px 16px 16px;
   position: absolute;
   box-sizing: border-box;
   z-index: 1;
   top: 39px;
+
+  &[open] {
+    width: 360px;
+  }
 
   &[open] .filter__header {
     color: $colorSiteSelected;
@@ -1371,23 +1378,22 @@ button {
     max-width: 354px;
 
     &__heading {
-        line-height: 20px;    
-    font-size: 16px;
+      line-height: 20px;
+      font-size: 16px;
     }
 
     &__discription {
-        font-size: 16px;
-        line-height: 20px;
+      font-size: 16px;
+      line-height: 20px;
     }
 
     &__advantages {
-        gap: 16px;
-        &_item h2 {
-            font-size: 16px;
-            line-height: 20px;
-        }
+      gap: 16px;
+      &_item h2 {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
-
   }
 }
 
@@ -1395,7 +1401,7 @@ button {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 343px;
+    max-width: 358px;
   }
 
   .header__wrapper {
@@ -1456,9 +1462,9 @@ button {
   }
 
   .btnCentr {
-    margin-top: 24px;
-    margin-bottom: 85px;
-  }
+    margin-top: 40px;
+    margin-bottom: 96px;
+}
 
   .advantages__wrapper {
     flex-direction: column;
@@ -1504,4 +1510,157 @@ button {
     gap: 40px;
     padding: 43px 0 9px 0;
   }
+
+  .top-head__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .regForm-loyality {
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 40px;
+  }
+
+  .regForm {
+    width: auto;
+  }
+
+  .loyality {
+    width: auto;
+
+    &__heading {
+      line-height: 20px;
+      font-size: 16px;
+    }
+
+    &__discription {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__advantages {
+      gap: 16px;
+      &_item h2 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .selectedProduct-adress {
+    margin-top: 40px;
+    margin-bottom: 96px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .selectedProduct {
+    gap: 30px;
+    &__box {
+      width: auto;
+    }
+
+    &__box-img {
+      width: 144px;
+      height: 188px;
+    }
+
+    &__box-top-header {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__param-box h2 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__box-top {
+      gap: 42px;
+    }
+    &__parametrs {
+      gap: 25px;
+      padding: 12px 12px 0 16px;
+    }
+
+    &__param-box-quantity-input {
+      width: 24px;
+      height: 16px;
+    }
+
+    &__box-top-btn svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    &__btn-format {
+      font-size: 12px;
+      padding: 10px 16px;
+    }
+  }
+
+  .paddingForPhone {
+    padding: 24px 0 46px;
+  }
+
+  .filter-sort {
+    height: 94px;
+  }
+
+  .filter {
+    top: 24px;
+    padding-left: 0;
+    box-sizing: content-box;
+
+    &__summary svg {
+      width: 37px;
+      height: 25px;
+    }
+  }
+
+
+  .displayNoneForFhone {
+    display: none;
+  }
+
+  .sort {
+    top: 38px;
+    left: 90px;
+    gap: 24px;
+
+    &__header {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .pagination {
+      margin: 40px 0 64px;
+    }
+  }
+
+  .swiper {
+    margin-bottom: 0;
+  }
+
+  .producDiscription {
+    position: static;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    max-width: 1024px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 64px;
+    
+    &__parameters_select {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  .padd {
+    padding-top: 64px;
+}
+
+
 }
