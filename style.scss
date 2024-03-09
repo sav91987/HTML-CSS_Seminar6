@@ -229,15 +229,17 @@ img {
   gap: 22px;
 
   &__heading {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
     color: #000;
+    line-height: 28px;
   }
 
   &__discription {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
     color: #000;
+    line-height: 28px;
   }
 
   &__advantages {
@@ -252,9 +254,10 @@ img {
     }
 
     &_item h2 {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 24px;
       color: #000;
+      line-height: 28px;
     }
   }
 }
@@ -332,7 +335,7 @@ img {
     color: $colorSiteSelected;
   }
 
-  &__selectedProduct__param-box-text {
+  &__param-box-text {
     color: #6f6e6e;
   }
 
@@ -434,6 +437,7 @@ img {
     align-items: flex-end;
     background-color: #f5f3f3;
     padding: 42px;
+    box-sizing: border-box;
   }
 
   &__subPrice-box {
@@ -884,8 +888,11 @@ h4 {
 }
 
 .salesCards {
-  @include flexJustify(center);
-  flex-wrap: wrap;
+  /* @include flexJustify(center);
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+
   gap: 30px;
 }
 
@@ -963,6 +970,8 @@ h4 {
 }
 
 .btnCentr {
+  display: flex;
+  align-items: center;
   border: 1px solid $colorSiteSelected;
   color: $colorSiteSelected;
   font-size: 16px;
@@ -990,10 +999,17 @@ h4 {
   display: flex;
   gap: 18px;
   align-items: center;
+  justify-content: center;
   margin: 48px 0 96px;
   padding: 12px 16px;
   border: 1px solid #ebebeb;
   border-radius: 2px;
+  width: 284px;
+
+  &__cover {
+    display: flex;
+    justify-content: center;
+  }
 
   &__numbers {
     font-family: Lato;
@@ -1174,14 +1190,14 @@ button {
 
 /* Планшет */
 
-@media (min-width: 848px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .container {
     max-width: 736px;
   }
 
   .main__wrapper {
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 736px;
     margin: 0 auto;
     margin-bottom: 65px;
   }
@@ -1271,11 +1287,113 @@ button {
   .subscribe__rightSide {
     padding: 0;
   }
+
+  .swiper {
+    margin-bottom: 0;
+  }
+
+  .producDiscription {
+    position: static;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    max-width: 1024px;
+  }
+
+  .display__none {
+    display: none;
+  }
+
+  .filter-sort {
+    height: 81px;
+  }
+
+  .filter {
+    padding-left: 0;
+    top: 14px;
+  }
+
+  .sort {
+    top: 28px;
+    left: auto;
+    right: 0;
+  }
+
+  .pagination {
+    margin: 40px 0 63px;
+  }
+
+  .selectedProduct-adress {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+    gap: 64px;
+  }
+
+  .selectedProduct {
+    justify-content: center;
+    gap: 62px;
+
+    &__box {
+      width: 734px;
+    }
+
+    &__box-top {
+      gap: 190px;
+    }
+
+    &__btn {
+      gap: 48px;
+      justify-content: center;
+    }
+  }
+
+  .adress {
+    gap: 15px;
+    flex-direction: row;
+    width: auto;
+
+    &__box {
+      width: 360px;
+    }
+
+    &__price-box {
+      width: 360px;
+      height: 222px;
+      margin-top: 55px;
+    }
+  }
+
+  .regForm-loyality {
+    gap: 22px;
+  }
+
+  .loyality {
+    max-width: 354px;
+
+    &__heading {
+        line-height: 20px;    
+    font-size: 16px;
+    }
+
+    &__discription {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__advantages {
+        gap: 16px;
+        &_item h2 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+  }
 }
 
 /* Телефон */
 
-@media (max-width: 847px) {
+@media (max-width: 767px) {
   .container {
     max-width: 343px;
   }
@@ -1288,8 +1406,9 @@ button {
     display: none;
   }
 
-  .main_wrapper {
+  .main__wrapper {
     max-width: 375px;
+    justify-content: center;
   }
 
   .mainLeftSide {
