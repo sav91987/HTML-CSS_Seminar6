@@ -62,4 +62,3 @@ const dataInfo = `[
   
 ]`;
 
-console.log(dataInfo);

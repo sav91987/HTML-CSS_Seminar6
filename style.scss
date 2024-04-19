@@ -272,7 +272,7 @@ img {
 .selectedProduct {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 40px;
 
   &__container {
     display: flex;
@@ -378,6 +378,16 @@ img {
     transition: 0.3s;
   }
 }
+
+.cartItems {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
 
 .adress {
   width: 360px;

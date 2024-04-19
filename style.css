@@ -254,7 +254,7 @@ img {
 .selectedProduct {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 40px;
 }
 .selectedProduct__container {
   display: flex;
@@ -343,6 +343,15 @@ img {
   color: #ffffff;
   background-color: #F16D7F;
   transition: 0.3s;
+}
+
+.cartItems {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
 }
 
 .adress {
